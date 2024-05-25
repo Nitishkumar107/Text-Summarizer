@@ -32,6 +32,6 @@ uvicorn
 fastapi
 Jinja2
 setuptools
-
+huggingface_hub
 
 -e .
