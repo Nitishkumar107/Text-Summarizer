@@ -4,7 +4,7 @@ from src.textSummarizer.pipeline.stage_02_data_validation_pipeline import DataVa
 
 from src.textSummarizer.pipeline.stage_03_data_transformation_pipeline import DataTransformationTrainingPipeline
 from src.textSummarizer.pipeline.stage_04_data_training_Pipeline import DataTrainerTrainingPipeline
-
+from src.textSummarizer.pipeline.stage_05_model_evaluation_Pipeline import DataEvaluationTrainingPipeline
 
 
 
@@ -38,7 +38,7 @@ except Exception as e:
         raise e
 
 
-'''
+
 
 STAGE_NAME = "Data transformation stage"
 try:
@@ -63,3 +63,26 @@ try:
 except Exception as e:
         logger.exception(e)
         raise e
+
+
+
+'''
+
+STAGE_NAME = "Model Evaluation stage"
+try:
+
+    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<") 
+    Model_trainer = DataEvaluationTrainingPipeline()
+    Model_trainer.main()
+    logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+        logger.exception(e)
+        raise e
+
+
+
+
+
+
+
+
