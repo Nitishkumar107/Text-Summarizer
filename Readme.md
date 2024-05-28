@@ -60,7 +60,7 @@ Email: nitish10795gmail.com
 
 ---------------------------------step 3. Create ECR repo to store/save docker image----------------
 
-- Save the URI: 596109973469.dkr.ecr.ap-south-1.amazonaws.com/texts
+- Save the URI: 596109973469.dkr.ecr.ap-south-1.amazonaws.com/text-s
 
 ---------------------------------------step 4. Create EC2 machine (Ubuntu)----------------------------
 ---------------------------------------step 5. Open EC2 and Install docker in EC2 Machine:-----------
